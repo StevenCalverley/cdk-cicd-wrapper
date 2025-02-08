@@ -19,7 +19,8 @@
     "test": "jest",
     "validate": "cdk-cicd validate",
     "validate:fix": "cdk-cicd validate --fix",
-    "watch": "tsc -w"
+    "watch": "tsc -w",
+    "workbench": "cdk -c workbench=true"
   },
   "devDependencies": {
     "@eslint/core": "^0.11.0",
