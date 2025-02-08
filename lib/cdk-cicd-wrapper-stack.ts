@@ -7,7 +7,7 @@ export class CdkCicdWrapperStack extends cdk.Stack {
     super(scope, id, props);
 
     if (cdk.FeatureFlags.of(this).isEnabled("hello-world")) {
-      wrapper.logger.info("Hello World is enabled");
+      wrapper.logger.info("Hello is enabled");
       new cdk.CfnOutput(this, "Hello", {
         value: "Hello World",
       });

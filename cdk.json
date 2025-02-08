@@ -78,7 +78,6 @@
     "@aws-cdk/aws-elasticloadbalancingV2:albDualstackWithoutPublicIpv4SecurityGroupRulesDefault": true,
     "@aws-cdk/aws-iam:oidcRejectUnauthorizedConnections": true,
     "@aws-cdk/core:enableAdditionalMetadataCollection": true,
-    "@aws-cdk/core:bootstrapQualifier": "hnb659fds",
-    "hello-world": true
+    "@aws-cdk/core:bootstrapQualifier": "hnb659fds"
   }
 }

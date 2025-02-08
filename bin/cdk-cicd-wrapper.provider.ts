@@ -3,7 +3,7 @@ import { CdkCicdWrapperStack } from "../lib/cdk-cicd-wrapper-stack";
 
 export class CdkCicdWrapperProvider extends BaseStackProvider {
   stacks(): void {
-    new CdkCicdWrapperStack(this.scope, "CdkCicdWrapperStack", {
+    new CdkCicdWrapperStack(this.context.scope, "CdkCicdWrapperStack", {
       env: this.env,
     });
   }
