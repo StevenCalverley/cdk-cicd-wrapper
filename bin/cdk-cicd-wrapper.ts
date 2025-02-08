@@ -16,10 +16,5 @@ PipelineBlueprint.builder()
       });
     },
   })
-  .addStack({
-    provide(context) {
-      context.scope.node.setContext("hello-world", true);
-      new CdkCicdWrapperProvider();
-    },
-  })
+  .addStack(new CdkCicdWrapperProvider())
   .synth(app);
