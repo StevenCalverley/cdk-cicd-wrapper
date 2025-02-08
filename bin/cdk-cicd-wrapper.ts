@@ -10,16 +10,10 @@ PipelineBlueprint.builder()
   .defineStages([Stage.RES, Stage.DEV])
   .workbench({
     provide(context) {
-      context.scope.node.setContext("hello-world", false);
       new CdkCicdWrapperStack(context.scope, "CdkCicdWrapperStack", {
         env: context.environment,
       });
     },
   })
-  .addStack({
-    provide(context) {
-      context.scope.node.setContext("hello-world", false);
-      new CdkCicdWrapperProvider();
-    },
-  })
+  .addStack(new CdkCicdWrapperProvider())
   .synth(app);
